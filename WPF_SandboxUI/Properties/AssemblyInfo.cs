@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WPF_SandboxUI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Test Formatter")]
+[assembly: AssemblyDescription("Программа предназначена для форматировния вопросов для тестов Moodle")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WPF_SandboxUI")]
+[assembly: AssemblyCompany("Alexander Yakimov")]
+[assembly: AssemblyProduct("Test Formatter")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
