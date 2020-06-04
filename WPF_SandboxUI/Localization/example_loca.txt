@@ -1,0 +1,20 @@
+<!--Localization is created by placing the translated sentence right after the "|" symbol.
+<!--Localization file must have ".loca" extension (just rename your .txt, .loca's can still be opened with a text editor)
+<!--Anything besides the defined fields will be ignored.
+<!--Copy all {} with numbers - those are used to place the values
+<!--Файл локализации формируется посредством вписывания переведённых фраз после символа "|" без пробела
+<!--Файл локализации должен иметь расширение ".loca" (просто переименуйте .txt, файлы .loca можно открывать текстовыми редакторами)
+<!--Весь текст, кроме ниже приведённых полей будет проигнорирован
+<!--Сохраните все {} с цифрами - они используются, чтобы выводить значения
+
+Language|NOT DEFINED
+File name|NOT DEFINED
+Topic|NOT DEFINED
+File exists: Yes|NOT DEFINED
+File exists: No|NOT DEFINED
+Since last launch:  #1: {0}   #2: {1}   #3: {2}   #4: {3}|NOT DEFINED
+Open directory|NOT DEFINED
+Open file|NOT DEFINED
+Generate|NOT DEFINED
+Writing...|NOT DEFINED
+Question #{0}|NOT DEFINED
