@@ -14,9 +14,21 @@ namespace ControllerLib
     /// </summary>
     public enum QNum
     {
+        /// <summary>
+        /// First question
+        /// </summary>
         First = 0,
+        /// <summary>
+        /// Second question
+        /// </summary>
         Second = 1,
+        /// <summary>
+        /// Third question
+        /// </summary>
         Third = 2,
+        /// <summary>
+        /// Fourth question
+        /// </summary>
         Fourth = 3
     }
 
@@ -25,13 +37,31 @@ namespace ControllerLib
     /// </summary>
     public struct Question
     {
+        /// <summary>
+        /// Filename of question
+        /// </summary>
         public string FileName;
+        /// <summary>
+        /// Question topic
+        /// </summary>
         public string Topic;
+        /// <summary>
+        /// Question text
+        /// </summary>
         public string QuestionText;
+        /// <summary>
+        /// Answer
+        /// </summary>
         public string ans1, ans2, ans3, ans4;
+        /// <summary>
+        /// Correct answer number
+        /// </summary>
         public QNum Correct;
     }
 
+    /// <summary>
+    /// Main program logic
+    /// </summary>
     public static class Controller
     {
         #region Paths, prefixes, extensions
@@ -65,6 +95,11 @@ namespace ControllerLib
         /// </summary>
         public static Dictionary<string, int[]> TopicStats { get; private set; } = new Dictionary<string, int[]>();
 
+        /// <summary>
+        /// Get a localizaed string with Topic stats
+        /// </summary>
+        /// <param name="topic">Topic</param>
+        /// <returns>Localized stats</returns>
         public static string GetFormattedStats(string topic)
         {
             if (TopicStats.ContainsKey(topic))
@@ -88,6 +123,11 @@ namespace ControllerLib
                         );
             }
         }
+        /// <summary>
+        /// Get a localized gb_Question header with question number for Topic
+        /// </summary>
+        /// <param name="topic">Topic</param>
+        /// <returns>gb_Question header</returns>
         public static string GetQuestionNumber(string topic)
         {
             if (TopicStats.ContainsKey(topic))
@@ -107,14 +147,12 @@ namespace ControllerLib
         /// </summary>
         private static Dictionary<string, StringHolder> localizations = new Dictionary<string, StringHolder>();
         /// <summary>
-        /// Current language
-        /// </summary>
-        public static string CLang { get; private set; } = "English";
-        /// <summary>
         /// Current localization StringHolder
         /// </summary>
         public static StringHolder CLoca { get; private set; } = new StringHolder();
-
+        /// <summary>
+        /// A list of all available languages
+        /// </summary>
         public static List<string> Languages { get; private set; } = new List<string>();
 
         /// <summary>
@@ -148,7 +186,6 @@ namespace ControllerLib
         {
             if (localizations.ContainsKey(lang))
             {
-                CLang = lang;
                 CLoca = localizations[lang];
             }
             else
@@ -226,8 +263,6 @@ namespace ControllerLib
             {
                 SetLocalization("English");
             }
-            //CLoca = localizations["Русский"];
-            //localizations["English"] = localizations["Русский"];
         }
         /// <summary>
         /// Formats the question using the format in StringHolder

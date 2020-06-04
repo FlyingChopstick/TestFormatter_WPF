@@ -148,18 +148,6 @@ namespace LocalizationLib
             {
                 throw new ArgumentException("File does not have all required fields");
             }
-
-
-            //L_fileName = localizationStrings[0];
-            //L_qTopic = localizationStrings[1];
-            //L_fileExistsY = localizationStrings[2];
-            //L_fileExistsN = localizationStrings[3];
-            //L_statistics = localizationStrings[4];
-
-            //B_openFile = localizationStrings[5];
-            //B_generate = localizationStrings[6];
-
-            //GB_question = localizationStrings[7];
         }
         #endregion
 
@@ -187,6 +175,9 @@ namespace LocalizationLib
         #endregion
 
         #region Buttons
+        /// <summary>
+        /// Open output directory button
+        /// </summary>
         public string B_openDir { get; private set; } = "Open directory";
         /// <summary>
         /// Open file button
